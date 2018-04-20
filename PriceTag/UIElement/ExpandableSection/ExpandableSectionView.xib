@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ExpandableSectionView" customModule="PriceTag" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mET-pt-Z9j">
+                    <rect key="frame" x="6" y="6" width="363" height="68"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTa-jV-4F1">
+                            <rect key="frame" x="20" y="21" width="40.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKi-JS-RrJ">
+                            <rect key="frame" x="302.5" y="21" width="40.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="XTa-jV-4F1" firstAttribute="leading" secondItem="mET-pt-Z9j" secondAttribute="leading" constant="20" id="ETB-VP-bFr"/>
+                        <constraint firstItem="XTa-jV-4F1" firstAttribute="top" secondItem="mET-pt-Z9j" secondAttribute="top" constant="21" id="IKs-bj-eB1"/>
+                        <constraint firstItem="PKi-JS-RrJ" firstAttribute="top" secondItem="mET-pt-Z9j" secondAttribute="top" constant="21" id="MB7-TC-9MC"/>
+                        <constraint firstAttribute="trailing" secondItem="PKi-JS-RrJ" secondAttribute="trailing" constant="20" id="RAA-zh-wMk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="mET-pt-Z9j" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="Cc9-We-1PZ"/>
+                <constraint firstItem="mET-pt-Z9j" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="6" id="fbo-kM-3sw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mET-pt-Z9j" secondAttribute="trailing" constant="6" id="l55-T2-uTb"/>
+                <constraint firstAttribute="bottom" secondItem="mET-pt-Z9j" secondAttribute="bottom" constant="6" id="roS-GO-izr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="containerView" destination="mET-pt-Z9j" id="KJP-a1-14J"/>
+                <outlet property="dateLabel" destination="XTa-jV-4F1" id="w10-Sm-qQd"/>
+                <outlet property="totalLabel" destination="PKi-JS-RrJ" id="cdO-cy-0Ye"/>
+            </connections>
+            <point key="canvasLocation" x="-77.5" y="5"/>
+        </view>
+    </objects>
+</document>
